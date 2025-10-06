@@ -1,0 +1,170 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Rugsnac — No Rugs. Just Snacks.</title>
+<link rel="icon" href="assets/logo.png" />
+<style>
+:root{
+  --orange:#FF7A2D;
+  --brown:#2E1F13;
+  --bg:#FFF3E6;
+  --muted:#7a5f4d;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, "Segoe UI", Roboto, Arial;background:var(--bg);color:var(--brown);}
+.header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand img{width:64px;height:64px;border-radius:12px;}
+.brand h1{margin:0;font-size:22px;letter-spacing:1px;}
+nav a{margin-left:18px;text-decoration:none;color:var(--brown);font-weight:600;}
+.hero{display:flex;align-items:center;gap:40px;padding:40px;flex-wrap:wrap;}
+.hero-left{flex:1;min-width:320px;}
+.hero-left h2{font-size:56px;margin:0;line-height:1.02;letter-spacing: -1px;}
+.hero-left p{color:var(--muted);font-size:18px;}
+.cta{margin-top:18px;display:flex;gap:12px;}
+.btn{background:var(--orange);color:white;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:700;}
+.btn.alt{background:transparent;border:2px solid var(--orange);color:var(--orange);}
+.hero-right{flex:0 0 520px;text-align:center;}
+.hero-right img{max-width:100%;border-radius:12px;}
+
+.section{padding:36px 40px;border-top:1px dashed rgba(46,31,19,0.06);}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.card{background:white;border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(46,31,19,0.04);}
+.table{width:100%;border-collapse:collapse;}
+.table th, .table td{padding:10px;border-bottom:1px solid rgba(0,0,0,0.05);}
+.footer{text-align:center;padding:28px;color:var(--muted);}
+
+/* responsive */
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .hero{flex-direction:column}
+  .hero-left h2{font-size:40px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="brand">
+    <img src="assets/logo.png" alt="Rugsnac logo" />
+    <div>
+      <h1>Rugsnac</h1>
+      <div style="color:var(--muted);font-size:12px">No Rugs. Just Snacks.</div>
+    </div>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#roadmap">Roadmap</a>
+    <a class="btn" href="#" id="buy-btn">Buy</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-left">
+      <h2>Crypto got you rugged?</h2>
+      <p>Flip the fear into flavor. Rugsnac is a community-first meme coin on Solana — fun, fair, and built for hold-ers.</p>
+      <div class="cta">
+        <a class="btn" href="#" id="pumpfun">Buy on Pump.fun</a>
+        <a class="btn alt" href="assets/whitepaper.pdf" download>Read Whitepaper</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="assets/hero.png" alt="Rugsnac hero" />
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div style="max-width:1000px;margin:0 auto">
+      <h3>About Rugsnac</h3>
+      <p style="color:var(--muted)">Rugsnac reclaims the meme coin narrative. Born on Solana, we prioritize fair launch, locked liquidity, and community governance. We’re snackable, sharable, and built to endure.</p>
+    </div>
+  </section>
+
+  <section id="tokenomics" class="section">
+    <div style="max-width:1000px;margin:0 auto" class="grid">
+      <div class="card">
+        <h4>Tokenomics</h4>
+        <p style="color:var(--muted)">Total Supply: <strong>69,000,000,000 RUGSNAC</strong><br/>Network: Solana (SPL)</p>
+        <table class="table" aria-label="Token distribution">
+          <thead><tr><th>Category</th><th>Allocation</th></tr></thead>
+          <tbody>
+            <tr><td>Community & Rewards</td><td>50%</td></tr>
+            <tr><td>Liquidity Pool</td><td>20%</td></tr>
+            <tr><td>Marketing & Growth</td><td>15%</td></tr>
+            <tr><td>Development Fund</td><td>10%</td></tr>
+            <tr><td>Community Collective (Team, vested)</td><td>5%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h4>Distribution</h4>
+        <div style="display:flex;gap:12px;align-items:center">
+          <div style="flex:1">
+            <div style="margin-bottom:8px"><span style="display:inline-block;width:12px;height:12px;background:#FFB26B;margin-right:8px"></span>Community — 50%</div>
+            <div style="margin-bottom:8px"><span style="display:inline-block;width:12px;height:12px;background:#FF7A2D;margin-right:8px"></span>Liquidity — 20%</div>
+            <div style="margin-bottom:8px"><span style="display:inline-block;width:12px;height:12px;background:#FFD38A;margin-right:8px"></span>Marketing — 15%</div>
+            <div style="margin-bottom:8px"><span style="display:inline-block;width:12px;height:12px;background:#FFEBDA;margin-right:8px"></span>Development — 10%</div>
+            <div><span style="display:inline-block;width:12px;height:12px;background:#FFDFBB;margin-right:8px"></span>Team — 5%</div>
+          </div>
+          <div style="width:160px;height:160px;border-radius:50%;background:conic-gradient(#FFB26B 0 50%, #FF7A2D 50% 70%, #FFD38A 70% 85%, #FFEBDA 85% 95%, #FFDFBB 95% 100%)"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="section">
+    <div style="max-width:1000px;margin:0 auto" class="card">
+      <h4>Roadmap</h4>
+      <ol style="color:var(--muted)">
+        <li><strong>Q4 2025</strong> — Pump.fun fair launch, audit, community growth.</li>
+        <li><strong>Q1 2026</strong> — NFT drop & staking platform.</li>
+        <li><strong>Q2 2026</strong> — DAO beta & CEX apps.</li>
+        <li><strong>Q3 2026</strong> — Full DAO rollout & partnerships.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div style="max-width:1000px;margin:0 auto" class="grid">
+      <div class="card">
+        <h4>Utility</h4>
+        <p style="color:var(--muted)">Staking rewards, NFT perks, and DAO governance are in development to add real value to holders.</p>
+      </div>
+      <div class="card">
+        <h4>Launch Budget</h4>
+        <ul style="color:var(--muted)">
+          <li>Token creation — 0.5 SOL</li>
+          <li>Liquidity Pool — 4 SOL</li>
+          <li>Marketing — 2 SOL</li>
+          <li>Development — 1.5 SOL</li>
+          <li>Rewards — 1.5 SOL</li>
+          <li>Reserve — 0.5 SOL</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div style="max-width:1000px;margin:0 auto" class="card">
+      <h4>Community Collective</h4>
+      <p style="color:var(--muted)">Developed by a community-driven collective. Join our Discord and Telegram to participate in governance and creative direction.</p>
+      <p style="margin-top:12px">Contact: <a href="mailto:rugsnac@gmail.com">rugsnac@gmail.com</a> • Site: <a href="https://rugsproject.fun">rugsproject.fun</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div style="margin-bottom:8px">Follow: @RUGSNAC • Discord • Telegram</div>
+    <div style="font-size:13px;color:var(--muted)">© Rugsnac Collective • Not financial advice. See whitepaper for details.</div>
+  </footer>
+</main>
+
+<script>
+document.getElementById('pumpfun').href = "https://pump.fun/create";
+document.getElementById('buy-btn').addEventListener('click', ()=> window.location.href = "https://pump.fun/create");
+</script>
+</body>
+</html>
